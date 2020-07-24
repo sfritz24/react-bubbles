@@ -27,9 +27,20 @@ In this project you will create a login page and request a token from the server
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain what a token is used for.
+
+      Tokens are way for the server to know that the user is approved to use that data
+
 - [ ] What steps can you take in your web apps to keep your data secure?
+
+      We can use axios with auth and private routes
+
 - [ ] Describe how web servers work.
+
+      There's a computer in which it holds the data of the website and it's connected to the internet, then on that same computer is a program to read the code and display to users. Each site has their own domain name and attached to that domain name is a IP address that tells you which computer specifically is holding it. And when you go to a page you're computer is communicating with that computer to get a copy of the site.
+      
 - [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+      If we're just talking about put and delete then they both can, put is the U it stands for update meaning we can update the data and delete is the D it stands for delete meaning we can delete or completely remove the data. But post I feel is part of it to you can't simply have updates and deletes without some posts and those stand for both the C and the R which is create and read/retreive so you can create a whole new object of data and you can grab that data and render that data.
 
 
 ## Project Set Up
