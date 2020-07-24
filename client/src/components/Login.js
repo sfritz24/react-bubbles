@@ -26,18 +26,16 @@ const Login = () => {
     axios.post('http://localhost:5000/api/login', login)
       .then(response =>{
         localStorage.setItem('token', response.data.payload);
+        push('/protected');
       })
       .catch(error =>{
         console.log(error);
-      })
-      .finally(() =>{
-        setLogin(initialValues);
       });
   };
 
   return (
     <>
-      <form>
+      <form onSubmit={onSubmit}>
         <label>Username:&nbsp;
           <input
             type='text'
@@ -54,6 +52,7 @@ const Login = () => {
             value={login.password}
           />
         </label>
+        <button>Submit</button>
       </form>
     </>
   );
